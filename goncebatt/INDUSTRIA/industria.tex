@@ -1,0 +1,137 @@
+\documentclass{report}
+\usepackage[spanish]{babel}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+
+\title{Industrias}
+\author{Joaquín Gómez}
+
+\begin{document}
+\maketitle
+
+\chapter{Industria}
+\textit{Es una actividad cuyo propósito es transformar las materias primas en productos
+    elaborados, semi-elaborados o super-elaborados utilizando una fuente de
+    energía}. Para su desarrollo necesitan materiales, maquinarias y recursos
+humanos, organizados habitualmente en empresas por su especialización laboral.
+La industria es la actividad económica fundamental del sector
+\textbf{secundario}
+
+\section{Tipos de organizaciones industriales}
+
+\begin{itemize}
+    \item \textbf{Industria pesada}: transforma materias primas en productos elaborados de gran tamaño, por ejemplo, maquinarias.
+    \item \textbf{Siderúrgicas}: industria que produce aceros y derivados del hierro
+    \item \textbf{Metalúrgicas}: trabaja metales diferentes del hierro, como por ejemplo el aluminio
+    \item \textbf{Cementeras}: fabrican cemento para la construcción a partir de piedra caliza y otros materiales
+    \item \textbf{Químicas}: elaboran productos mediante procesos químicos
+    \item \textbf{Petroquímicas}: transforman derivados del petrato en productos químicos
+    \item \textbf{Automovilísticas}: producen vehículos y autopartes
+    \item \textbf{Industria ligera}: fabrican bienes de consumo final para el público
+    \item \textbf{Alimenticia}: transforman materias primas en productos comestibles
+    \item \textbf{Industria de punta}: usa tecnología avanzada y están en constante innovación
+    \item \textbf{Farmacéutica}: producen medicamentos y fármacos
+    \item \textbf{Textil}: fabrican tela, ropa y fibras
+    \item \textbf{Armamentística}: desarrollan armamento militar y equipos
+    \item \textbf{Robótica}: diseña y construye robots y sistemas automatizados
+    \item \textbf{Informática}: produce hardware y software
+    \item \textbf{Papelera}: fabrica papel a partir de madera
+    \item \textbf{Astronáutica}: desarolla vehículos y tecnología para el espacio
+    \item \textbf{Mecánica}: crea maquinaria y equipos industriales
+    \item \textbf{Aeroespacial}: fabrica aviones, satélites y tecnología aérea y del espacio
+\end{itemize}
+
+\chapter{Organizaciones Industriales}
+
+La principal característica de las empresas industriales es dedicarse a la
+transformación de productos, obliga a que su organización interna difiera
+considerablemente de la adoptada por las empresas comerciales.
+
+\section{Ciclo operativo}
+
+Es el conjunto de actividades básicas que realiza cualquier empresa para
+alcanzar sus objetivos
+
+\subsection{Ciclo operativo de una empresa comercial}
+
+\begin{center}
+    \begin{tikzpicture}
+        \matrix [column sep=7mm, row sep=5mm] {
+            \node (me) [draw, shape=rectangle] {Compra (mercaderías)};                                     \\
+            \node (pa) [draw, shape=rectangle] {Pagos (de las mercaderías)};                               \\
+            \node (ve) [draw, shape=rectangle] {Ventas (de las mercaderias en el mismo estado adquirido)}; \\
+            \node (co) [draw, shape=rectangle] {Cobro (a los clientes o deudores)};                        \\
+        };
+        \draw[<-, thick] (pa) -- (me);
+        \draw[<-, thick] (ve) -- (pa);
+        \draw[<-, thick] (co) -- (ve);
+    \end{tikzpicture}
+\end{center}
+
+\begin{itemize}
+    \item Vende los bienes como los adquiere
+    \item Los bienes adquiridos se denominan \textbf{mercaderías}
+    \item Los bienes vendidos también se denominan \textbf{mercaderías}
+    \item Cuenta con una contabilidad general que brinda información interna y externa
+\end{itemize}
+
+\begin{center}
+    \begin{tikzpicture}
+        \matrix [column sep=7mm, row sep=5mm] {
+            \node (me) [draw, shape=rectangle] {Compra (materias primas, insumos y materiales)}; \\
+            \node (pa) [draw, shape=rectangle] {Pagos (de las mismas a los proveedores)};        \\
+            \node (fa) [draw, shape=rectangle] {Fabricación o elaboracion de productos};         \\
+            \node (ve) [draw, shape=rectangle] {Ventas (de los productos elaborados)};           \\
+            \node (co) [draw, shape=rectangle] {Cobros (a clientes, deudores)};                  \\
+        };
+        \draw[<-, thick] (pa) -- (me);
+        \draw[<-, thick] (fa) -- (pa);
+        \draw[<-, thick] (ve) -- (fa);
+        \draw[<-, thick] (co) -- (ve);
+    \end{tikzpicture}
+\end{center}
+
+\textbf{Características}
+\begin{itemize}
+    \item Vende los bienes después de su transformación
+    \item Los bienes adquiridos son ``materia prima''
+    \item Los bienes que se venden se denominan ``productos elaborados''
+    \item Cuentan con una contabilidad general que brinda información interna y externa.
+          Y con una contabilidad de costo que brinda información de uso interno.
+\end{itemize}
+
+\begin{center}
+    \begin{tikzpicture}
+        \node (in) [draw, shape=rectangle] {INDUSTRIALIZACIÓN};
+
+        \matrix [column sep=7mm, row sep=25mm] {
+            \node (im) [draw, shape=rectangle] {Imperios Industriales};     &
+            \node (ex) [draw, shape=rectangle] {Expansión Urbana};            \\
+            \node (am) [draw, shape=rectangle] {Amenazas Medioambientales}; &
+            \node (bu) [draw, shape=rectangle] {Burgueses y Proletariados};   \\
+        };
+        \draw[<-, thick] (im) -- (in);
+        \draw[<-, thick] (ex) -- (in);
+        \draw[<-, thick] (am) -- (in);
+        \draw[<-, thick] (bu) -- (in);
+    \end{tikzpicture}
+\end{center}
+
+La industrialización se refiere a la producción de bienes en grandes
+proporciones y también alude al proceso mediante el cual una sociedad o Estado
+pasa de una economía agrícola a una economía industrializada.
+
+La industrialización se genera en un sector específico y se fundamenta en el
+desarrollo de maquinarías, técnicas y procesos de trabajo con el fin de
+producir más en menos tiempo, así como en el crecimiento económico que busca
+maximizar los beneficios y los resultados del PBI (Producto Bruto Interno).
+
+Gracias a la industrialización, se dio origen a un nuevo orden social,
+económico, político, cultural y geográfico.
+
+Los trabajos agrícolas se sistematizaron con el desarrollo de nuevas
+maquinarias, los habitantes del campo emigraron a las nuevas y grandes ciudades
+en busca de oportunidades de empleo, mejores salarios, un nuevo hogar, mayor
+calidad de vida, se estandarizó la familia nuclear y no numerosa, entre otras.
+
+\end{document}

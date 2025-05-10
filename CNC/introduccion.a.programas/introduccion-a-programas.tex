@@ -1,0 +1,291 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage[spanish]{babel}
+\title{Introducción a programas --- Taller de CNC}
+\author{Joaquín Gómez --- $5^{to}$ ``A''}
+\date{\today}
+
+\begin{document}
+\maketitle
+\section{Llamar a un programa}
+\begin{itemize}
+    \item Cambiar al modo EDICIÓN
+    \item Pulsar la tecla $PRGRM$
+    \item Con la tecla de software $BIBLIO$ se ven los programas existentes
+    \item Escribir el ID del programa (por ej. $O777$)
+    \item Para un nuevo programa, pulsar $INSRT$
+    \item Para un programa ya existente pulsar { $\downarrow$ }
+\end{itemize}
+
+\section{Estructura de un programa}
+
+\begin{itemize}
+    \item $NO1,\,NO2,\,NO3,\,NO4,\,NO5,\,NO6,\,NO7 \longrightarrow$ Instrucciones Técnicas
+    \item $T0101,\,M06,\,S1200,\,M03,\,F1 \longrightarrow$ Instrucciones Tecnológicas
+    \item $G99,\,G54,\,G00,\,X20,\,Z1,\,G01,\,Z22 \longrightarrow$ Instrucciones Geométricas
+\end{itemize}
+
+\begin{equation*}
+    \begin{matrix}
+        NO1 & G99   &     &    \\
+        NO2 & G54   &     &    \\
+        NO3 & T0101 & M06      \\
+        NO4 & G97   &     &    \\
+        NO5 & S1200 & M03 &    \\
+        NO6 & G00   & X20 & Z1 \\
+        NO7 & G54   & Z22 & F1 \\
+    \end{matrix}
+\end{equation*}
+
+\section{Datos del maquinado}
+\begin{center}
+    $\textnormal{Herramienta} : \textnormal{Tool} = \textbf{T}$
+\end{center}
+\begin{equation*}
+    \begin{matrix}
+        T0101 & \textnormal{Llama a la herramienta}                     \\
+        T0202 & \textnormal{Número $\dots$ con su corrector respectivo} \\
+        T0303\end{matrix}
+\end{equation*}
+
+\section{Setup o seteo de la herramienta}
+
+\textbf{Setup geométrico en el eje $x$:}
+\begin{itemize}
+    \item Elegir el MDI de la herramienta, además seleccionar el sentido y velocidad de
+          giro
+    \item Realizar un cilindrado manualmente y retrirar sin modificar las coordenadas $x$
+    \item Parar el plato con ``SPDL STOP''
+    \item Medir con un calibre el diámetro
+    \item OFFSET --- COMP (Compensación) --- GEOME (Geométrica)
+    \item Ubicarse en el $x$ de la herramienta
+    \item Cargar el valor medido. Por ejemplo, diámetro 30 $\longrightarrow$ cargar $x30$
+    \item Luego ``+Media''
+    \item En MDI cargar la herramienta con la compensación
+\end{itemize}
+
+\textbf{Setup geométrico en el eje $z$:}
+\begin{itemize}
+    \item Elegir el MDI de la herramienta, además seleccionar el sentido y velocidad de
+          giro
+    \item Realizar un cilindrado manualmente hasta una profundidad de $1mm$
+          aproximadamente $x$
+    \item Parar el plato con ``SPDL STOP''
+    \item Medir con un calibre el diámetro
+    \item OFFSET --- COMP (Compensación) --- GEOME (Geométrica)
+    \item Ubicarse en el $z$ de la herramienta
+    \item Cargar el valor 0
+    \item Luego ``Media''
+    \item En MDI cargar la herramienta con la compensación
+\end{itemize}
+
+\section{Los grupos «G» y «M»}
+
+El torno funciona mediante la ejecución de órdenes de desplazamiento y de
+condiciones de entorno. Las órdenes de desplazamiento correspnden a las
+funciones G, denominadas \textbf{funciones preparatorias}, que tienen relación
+directa con los movimientos de la herramienta, así como el desbastado de la
+pieza de trabajo. Por su parte, las funciones M entregan las
+\textbf{condiciones auxiliares} en que se trabajará (con o sin lubricante,
+sentido de giro del husillo, etc.). Para la ejecución de un programa cualquiera
+deben activarse varias funciiones G y M, las cuales se dividen en grupos, según
+el tipo de acción que representen.
+
+\section{Descripción breve de las direcciones}
+
+\begin{itemize}
+    \item Direcciones de desplazamiento $x$ y $z$: se refieren en forma absoluta a un
+          origen de coordenadas. $z$ se mide paralelamente al eje de giro del husillo
+          ($z$ negativo hacia la base del husillo), mientras que $x$ es la medida del
+          diámetro ($x$ positivo por encima del eje de giro del husillo).
+
+    \item Direcciones de desplazamiento $u$ y $w$: ídem $x$ y $z$ pero los
+          desplazamientos se miden \textbf{incrementalmente} desde el punto de partida
+          del movimiento. Son desplazamientos relativos. En este caso, $u$ \textbf{no
+              representa} medidas diametrales, sino que es la distancia entre el punto
+          inicial y el final (distancia radial).
+\end{itemize}
+
+\begin{center}
+    \begin{tikzpicture}
+        \draw[<-, thick] (0,2)--(0,0);
+        \draw[<-, thick] (0,-2)--(0,0);
+
+        \draw[<-, thick] (2,0)--(0,0);
+        \draw[<-, thick] (-2,0)--(0,0);
+
+        \draw (2.3,0) node{$Z^{+}$};
+        \draw (-2.3,0) node{$Z^{-}$};
+        \draw (0,2.3) node{$X^{-}$};
+        \draw (0,-2.3) node{$X^{+}$};
+    \end{tikzpicture}
+    \begin{tikzpicture}
+        \draw[<-, thick] (0,2)--(0,0);
+        \draw[<-, thick] (0,-2)--(0,0);
+
+        \draw[<-, thick] (2,0)--(0,0);
+        \draw[<-, thick] (-2,0)--(0,0);
+
+        \draw (2.3,0) node{$W^{+}$};
+        \draw (-2.3,0) node{$W^{-}$};
+        \draw (0,2.3) node{$U^{-}$};
+        \draw (0,-2.3) node{$U^{+}$};
+    \end{tikzpicture}
+\end{center}
+
+\section{Otras direcciones}
+
+\begin{itemize}
+    \item Dirección $F$: indica avance
+    \item Dirección $S$: indica velocidad
+    \item Dirección $R$: indica radio o empalme
+    \item Dirección $A$: indica ángulo
+    \item Dirección $C$: indica chaflán
+\end{itemize}
+
+\section{funciones G00 o G0}
+\textbf{Los carros se desplazan a la velocidad máxima al punto final programado (posición de cambio de herramienta, punto inicial para el siguiente arranque de viruta).}
+\begin{itemize}
+    \item Mientras se ejecuta G00 se suprime un avance programado F
+    \item La velocidad de avance rápido la define el fabricante de la máquina
+    \item El interruptor de correción de avance está limitado al $100\%$
+    \item Debe verificarse previamente que no haya obstáculos en el camino de la
+          herramienta
+    \item En el caso de modificar entre bloques ambas coordeanadas, la herramienta moverá
+          los dos ejes a la vez
+\end{itemize}
+
+\section{Funciones G01 o G1}
+
+Movimiento recto (refrenteado, torneado longitudinal, torneado cónico) con
+velocidad programada de avance.
+
+\begin{itemize}
+    \item No realizará el movimiento si no está acompañado de un avance o si este no fue
+          cargado previamente.
+    \item Siempre que entre en contacto con el material debo emplear movimiento de
+          trabajo.
+    \item En caso de un cilindrado se modifica el eje $z$. Mientras que en el frenteado
+          el eje $x$.
+\end{itemize}
+
+\section{Códigos G básicos.}
+\subsection*{Descripción de comandos de funciones G}
+
+\textbf{$G01$ interpolación lineal}. Formato: 
+\begin{equation*}
+\begin{matrix}
+    N\dots & G01 & X(U)\dots & Z(W)\dots & F\dots
+\end{matrix}
+\end{equation*}
+
+Movimiento recto (refrentado, torneado longitudinal, torneado cónico) con velocidad programada de avance.
+
+Ejemplo: $G90$ Absoluto.
+\begin{equation*}
+    \begin{matrix}
+        N\dots & G95 \\
+        \dots & \dots \\
+        N20 &G01 &X40 &Z20.1 &F0.1
+    \end{matrix}
+\end{equation*}
+
+$G91$ Incremental.
+\begin{equation*}
+    \begin{matrix}
+        N\dots & G95 \\
+        \dots & \dots \\
+        N20 &G01 &X 0 &Z-25.9
+    \end{matrix}
+\end{equation*}
+
+\textbf{$G02$ interpolación circular a la derecha}
+\textbf{$G03$ interpolación circular a la derecha}
+
+Formato
+\begin{equation*}
+\begin{matrix}
+    N\dots & G02 & X(U)\dots & Z(W)\dots& I\dots & K\dots
+\end{matrix}
+\end{equation*}
+Alternativamente
+\begin{equation*}
+\begin{matrix}
+    N\dots & G02 & X(U)\dots & Z(W)\dots& R\dots & F\dots
+\end{matrix}
+\end{equation*}
+
+$X,Z,(U),(W) \longrightarrow$ Punto final del arco 
+$I,K\longrightarrow$ Parámetros incrementales del arco. (Distancia desde el punto inicial al centro del arco (I), está en relación con el eje X, K con el eje Z).
+$R \longrightarrow$ Radio del arco 
+
+La herramienta se desplazará al punto final a lo largo del arco definido con el avance programado en F.
+
+
+
+\section{Programas}
+
+\subsection{Figura 1.}
+\begin{equation*}
+    \begin{matrix}
+           & O0001 \\ 
+        N10 & T0303 \\
+        N20 & G97 & S1500 & M03 & F0.18 \\
+        N30 & G0 & X0 & Z2 \\ 
+        N40 & G1 & & Z0 \\
+        N50 & & X10 &   Z{-8} \\ 
+        N60 & & X10 &   Z{-17} \\
+        N70 & & X20 &   Z{-17} \\
+        N80 & & X20 &   Z{-28} \\
+        N90 & & X30 &   Z{-36} \\
+        N100 & & X30 &  Z{-45} \\
+        N110 & G0 & X100 & Z100 \\
+        N120 & M30 \\
+    \end{matrix}
+\end{equation*}
+
+
+\subsection{Figura 2.}
+\begin{equation*}
+    \begin{matrix}
+           & O0002 \\ 
+        N10 & T0303 \\
+        N20 & G97 & S1500 & M03 & F0.18 \\
+        N30 & G0 & X0 & Z2 \\ 
+        N40 & G1 & & Z0 \\
+        N50 & &  X4 & Z0 \\ 
+        N60 & &  X4 & Z{-3} \\
+        N70 & &  X14 & Z{-9} \\
+        N80 & &  X22 & Z{-9} \\
+        N90 & &  X22 & Z{-18} \\
+        N100 & & X30 & Z{-18} \\
+        N110 & & X32 & Z{-19} \\
+        N120 & & X32 & Z{-28.4} \\
+        N130 & G0 & X100 & Z100 \\
+        N140 & M30 \\
+    \end{matrix}
+\end{equation*}
+
+\subsection{Figura 3.}
+\begin{equation*}
+    \begin{matrix}
+        & O0003 \\ 
+        N10 & T0303 \\
+        N20 & G97 & S1500 & M03 & F0.18 \\
+        N30 & G0 & X0 & Z2 \\ 
+        N40 & G1 & & Z0 \\
+        N50 & G03 & X16 & Z{-8} & R8 \\ 
+        N60 & G1 & X20 & Z{-8} \\
+        N70 & & X23 & Z{-9.5} \\
+        N80 & & & Z{-20} \\
+        N90 & G02 & X29 & Z{-23} & R3 \\
+        N100 & G1 & X30 & Z{-23} \\
+        N110 & G03 & X32 & Z{-25} & R2\\
+        N120 & G1 & X32 & Z{-35} \\
+        N130 & G0 & X100 & Z100 \\
+        N140 & M30 \\
+    \end{matrix}
+\end{equation*}
+
+\end{document}
