@@ -1,8 +1,16 @@
-\documentclass[11pt]{article}
+\documentclass[11pt]{report}
 \usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[spanish]{babel}
+
+\title{Máquinas y Comandos Eléctricos}
+\author{Joaquín Gómez --- 5to ``A''}
+\date{2025}
 
 \begin{document}
-\section{Autotransformadores}
+\maketitle
+
+\chapter{Autotransformadores}
 Los autotransformadores poseen una parte del devanado en común, que corresponde tanto al 
 primario como al secundario. 
 El principio de funcionamiento es el mismo que el del transformador común, entonces la relación de 
@@ -15,7 +23,7 @@ en común es igual a la diferencia de la corriente del devanado de baja tensión
 \end{equation}
 Para que un autotransformador funcione adecuadamente, los devanados deben tener el mismo sentido de bobinado.
 
-\subsection{Autotransformadores Reductores}
+\section{Autotransformadores Reductores}
 Si se aplica una tensión alterna entre los puntos A y B, y se mide la tensión de salida entre los puntos C y D,
 se dice que el autotransformador es un reductor de tensión
 
@@ -31,4 +39,68 @@ En este caso, la relación de vueltas del autotransformador es:
     \frac{N_s}{N_p} < 1 
 \end{equation}
 
-\end{document}
+\section{Autotransformadores elevadores}
+Si se aplica una tensión de alimentación alterna entre los puntos A y B, y se mide la tensión de salida entre los puntos C y D, se dice que el autotransformador es elevador de tensión.
+
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[width=200px]{autotransformador-elevador.png}
+    \end{center}
+    \caption{Autotransformador elevador}
+\end{figure}
+
+En este caso, la relación de vueltas del autotransformador es: 
+\begin{equation}
+    \frac{N_s}{N_p} > 1
+\end{equation}
+
+Los autotransformadores tienen la ventaja sobre los transformadores comunes 
+de un peso y costo menor. En lugar de tener un bobinado de AT de $N_1$ espiras,
+se debe preveer para el bobinado de BT, con un número $N_2$ de espiras, un número 
+adicional de espiras de $N_1-N_2$. También hay que tener en cuenta que el conductor
+de la sección común del bobinado debe tener una sección de alambre en función de la 
+diferencia de corrientes entre AT y BT, o sea, $I_2-I_1$.
+
+Otra ventaja es la de no necesitar aislamiento entre los bobinados primario y secundario.
+Sin embargo, esto trae como desventaja que el bobinado primario no es independiente del 
+secundario. Esto causa peligro para una persona, pues, entre tierra y el hilo común del 
+secundario y el primario existe la tensión del primario (Ver figura 1).
+
+\section{Ejercicios}
+
+\begin{enumerate}
+    \item[($\alpha$)] Se requiere un autotransformador para aumentar un voltaje de $220V$ a $250V$.
+        El número total de espiras que tiene el devanado principal es de $2000$. Determine 
+        la posición del punto de toma primario, la corriente primaria y secundaria cuando 
+        la salida tiene una potencia de $10{kVA}$. Y la economía de cobre ahorrada\footnote{La 
+        relación $n$ se define como la relación entre el voltaje más bajo y el voltaje más alto,
+        entonces se puede demostrar que el ahorro de cobre es: $n\cdot100\%$}.
+
+        Tenemos que la relación ideal de vueltas debe ser 
+        \begin{equation}
+            \frac{V_1}{V_2} < 1
+        \end{equation}
+        ya que el transformador es elevador. De forma que 
+        \begin{equation}
+            \frac{N_1}{N_2} < 1
+        \end{equation}
+        Así, tenemos que idealmente 
+        \begin{equation}
+            \begin{split}
+                \frac{V_1}{V_2} &= \frac{N_1}{N_2} \\
+                \frac{220V}{250V} &= \frac{N_1}{2000esp} \\
+            \end{split}
+        \end{equation}
+        Por lo tanto 
+        \begin{equation}
+            \begin{split}
+                N_2 &= \frac{220 V \cdot 2000esp}{250V} \\&= 1760 esp
+            \end{split}
+        \end{equation}        
+        El porcentaje de ahorro de cobre está dado por 
+        \begin{equation}
+            n\cdot 100\% = \frac{V_1}{V_2}\cdot 100\% = 88\% 
+        \end{equation}
+    \end{enumerate}
+
+\end{document} como
