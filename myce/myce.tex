@@ -1,7 +1,10 @@
 \documentclass[11pt]{report}
 \usepackage{graphicx}
 \usepackage{amsmath}
+\usepackage{amsthm}
 \usepackage[spanish]{babel}
+
+\newtheorem{example}{Ejemplo}[section]
 
 \title{Máquinas y Comandos Eléctricos}
 \author{Joaquín Gómez --- 5to ``A''}
@@ -66,10 +69,8 @@ Sin embargo, esto trae como desventaja que el bobinado primario no es independie
 secundario. Esto causa peligro para una persona, pues, entre tierra y el hilo común del 
 secundario y el primario existe la tensión del primario (Ver figura 1).
 
-\section{Ejercicios}
-
-\begin{enumerate}
-    \item[($\alpha$)] Se requiere un autotransformador para aumentar un voltaje de $220V$ a $250V$.
+\begin{example}
+        Se requiere un autotransformador para aumentar un voltaje de $220V$ a $250V$.
         El número total de espiras que tiene el devanado principal es de $2000$. Determine 
         la posición del punto de toma primario, la corriente primaria y secundaria cuando 
         la salida tiene una potencia de $10{kVA}$. Y la economía de cobre ahorrada\footnote{La 
@@ -101,6 +102,21 @@ secundario y el primario existe la tensión del primario (Ver figura 1).
         \begin{equation}
             n\cdot 100\% = \frac{V_1}{V_2}\cdot 100\% = 88\% 
         \end{equation}
-    \end{enumerate}
+        Como condición, tenemos que $P_1 = P_2$, así, podemos deducir que 
+        \begin{equation}
+            \begin{split}
+                V_1 I_1 &= P_1 \\
+                220V I_1 &= 10000VA \\
+                I_1 &\approx 45.456A
+            \end{split}
+        \end{equation}
+        \begin{equation}
+            \begin{split}
+                V_2 I_2 &= P_2 \\
+                250V I_2 &= 10000VA \\
+                I_2 &= 40A
+            \end{split}
+        \end{equation}
+    \end{example}
 
 \end{document} como
