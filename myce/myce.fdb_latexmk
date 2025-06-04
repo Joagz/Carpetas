@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1749048319 "/home/joagz/Desktop/carpetas/myce/myce.tex" "myce.pdf" "myce" 1749048320
+["pdflatex"] 1749050051 "/home/joagz/Desktop/carpetas/myce/myce.tex" "myce.pdf" "myce" 1749050052
   "/etc/texmf/web2c/texmf.cnf" 1746714615 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/joagz/Desktop/carpetas/myce/myce.tex" 1749048318 4922 e37dc48eb0d4308f28585e40a35b61d8 ""
+  "/home/joagz/Desktop/carpetas/myce/myce.tex" 1749050050 5811 62354b19bd93084d551379a3150e6838 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -27,6 +27,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb" 1248133631 36094 798f80770b3b148ceedd006d487db67c ""
@@ -74,8 +75,9 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1747001674 2800791 d4a385ee0561ac109a2b4de0c13ed328 ""
   "autotransformador-elevador.png" 1748960610 7364 a966a5236653e5e216cd28b602f69243 ""
   "autotransformador-reductor.png" 1748870628 7288 ec7c4814b5662f84e951a832222b8617 ""
-  "myce.aux" 1749048320 879 733b833d3aa1d80f864317bd474145ce "pdflatex"
-  "myce.tex" 1749048318 4922 e37dc48eb0d4308f28585e40a35b61d8 ""
+  "ejemplo2.png" 1749050024 15168 9d92fc5d84d9726ef8f42c640d04d439 ""
+  "myce.aux" 1749050052 879 733b833d3aa1d80f864317bd474145ce "pdflatex"
+  "myce.tex" 1749050050 5811 62354b19bd93084d551379a3150e6838 ""
   (generated)
   "myce.aux"
   "myce.log"
