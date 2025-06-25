@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.5.11)  10 JUN 2025 12:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.5.11)  25 JUN 2025 12:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -122,85 +122,192 @@ Package babel Info: Making " an active character on input line 570.
 Package babel Info: Making . an active character on input line 675.
 Package babel Info: Making < an active character on input line 722.
 Package babel Info: Making > an active character on input line 722.
+)) (/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count275
+\rotFPtop=\skip55
+\rotFPbot=\skip56
+\rot@float@box=\box52
+\rot@mess@toks=\toks29
+) (/usr/share/texlive/texmf-dist/tex/latex/stackengine/stackengine.sty
+Package: stackengine 2021/07/22 v4.11\ Stacking text and objects in convenient ways
+ (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count276
+) (/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.sty (/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.tex
+\loi_cnt_foreach_nest=\count277
+\loi_nestcnt=\count278
+)
+Package: listofitems 2019/08/21 v1.63 Grab items in lists using user-specified sep char (CT)
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count279
+\calc@Bcount=\count280
+\calc@Adimen=\dimen151
+\calc@Bdimen=\dimen152
+\calc@Askip=\skip57
+\calc@Bskip=\skip58
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count281
+\calc@Cskip=\skip59
+)
+\c@@stackindex=\count282
+\@boxshift=\skip60
+\stack@tmplength=\skip61
+\temp@stkl=\skip62
+\@stackedboxwidth=\skip63
+\@addedbox=\box53
+\@anchorbox=\box54
+\@insetbox=\box55
+\se@backgroundbox=\box56
+\stackedbox=\box57
+\@centerbox=\box58
+\c@ROWcellindex@=\count283
+) (/usr/share/texlive/texmf-dist/tex/latex/scalerel/scalerel.sty
+Package: scalerel 2016/12/29 v1.8 Routines for constrained scaling and stretching of objects, relative to a reference object or in absolute terms
+\thesrwidth=\skip64
+\thesrheight=\skip65
+\srblobheight=\skip66
+\srblobdepth=\skip67
+\mnxsrwidth=\skip68
+\LMex=\skip69
+\LMpt=\skip70
+) (/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count284
+\c@Blindtext=\count285
+\c@blind@countparstart=\count286
+\blind@countxx=\count287
+\blindtext@numBlindtext=\count288
+\blind@countyy=\count289
+\c@blindlist=\count290
+\c@blindlistlevel=\count291
+\c@blindlist@level=\count292
+\blind@listitem=\count293
+\c@blind@listcount=\count294
+\c@blind@levelcount=\count295
+\blind@mathformula=\count296
+\blind@Mathformula=\count297
+\c@blind@randomcount=\count298
+\c@blind@randommax=\count299
+\c@blind@pangramcount=\count300
+\c@blind@pangrammax=\count301
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\c@example=\count275
+\Gm@cnth=\count302
+\Gm@cntv=\count303
+\c@Gm@tempcnt=\count304
+\Gm@bindingoffset=\dimen153
+\Gm@wd@mp=\dimen154
+\Gm@odd@mp=\dimen155
+\Gm@even@mp=\dimen156
+\Gm@layoutwidth=\dimen157
+\Gm@layoutheight=\dimen158
+\Gm@layouthoffset=\dimen159
+\Gm@layoutvoffset=\dimen160
+\Gm@dimlist=\toks30
+)
+\c@example=\count305
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count276
-\l__pdf_internal_box=\box52
+\l__color_backend_stack_int=\count306
+\l__pdf_internal_box=\box59
 ) (./myce.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
 \openout1 = `myce.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count277
-\scratchdimen=\dimen151
-\scratchbox=\box53
-\nofMPsegments=\count278
-\nofMParguments=\count279
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count280
-\MPscratchDim=\dimen152
-\MPnumerator=\count281
-\makeMPintoPDFobject=\count282
-\everyMPtoPDFconversion=\toks30
+\scratchcounter=\count307
+\scratchdimen=\dimen161
+\scratchbox=\box60
+\nofMPsegments=\count308
+\nofMParguments=\count309
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count310
+\MPscratchDim=\dimen162
+\MPnumerator=\count311
+\makeMPintoPDFobject=\count312
+\everyMPtoPDFconversion=\toks32
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
- (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)) (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)) (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \. on input line 13.
-LaTeX Info: Redefining \% on input line 13.
- [1
+LaTeX Info: Redefining \. on input line 20.
+LaTeX Info: Redefining \% on input line 20.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(81.94394pt, 433.62pt, 81.94394pt)
+* v-part:(T,H,B)=(106.75473pt, 578.15999pt, 160.13213pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=433.62pt
+* \textheight=578.15999pt
+* \oddsidemargin=9.67395pt
+* \evensidemargin=9.67395pt
+* \topmargin=-2.51526pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Cap\'{\i }tulo 1.
 <autotransformador-reductor.png, id=8, 304.13625pt x 245.91875pt>
 File: autotransformador-reductor.png Graphic file (type png)
 <use autotransformador-reductor.png>
-Package pdftex.def Info: autotransformador-reductor.png  used on input line 35.
+Package pdftex.def Info: autotransformador-reductor.png  used on input line 49.
 (pdftex.def)             Requested size: 200.75073pt x 162.32562pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -208,37 +315,97 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <autotransformador-elevador.png, id=9, 318.18875pt x 229.85875pt>
 File: autotransformador-elevador.png Graphic file (type png)
 <use autotransformador-elevador.png>
-Package pdftex.def Info: autotransformador-elevador.png  used on input line 50.
+Package pdftex.def Info: autotransformador-elevador.png  used on input line 66.
 (pdftex.def)             Requested size: 200.75073pt x 145.01869pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [1
 
 ] [2 <./autotransformador-reductor.png (PNG copy)> <./autotransformador-elevador.png (PNG copy)>] [3]
 <ejemplo2.png, id=31, 402.50375pt x 276.03125pt>
 File: ejemplo2.png Graphic file (type png)
 <use ejemplo2.png>
-Package pdftex.def Info: ejemplo2.png  used on input line 135.
+Package pdftex.def Info: ejemplo2.png  used on input line 168.
 (pdftex.def)             Requested size: 200.75073pt x 137.66989pt.
  [4 <./ejemplo2.png>]
 Cap\'{\i }tulo 2.
 [5
 
-] (./myce.aux
+]
+<conexiones-trafo.jpg, id=41, 985.6825pt x 457.71pt>
+File: conexiones-trafo.jpg Graphic file (type jpg)
+<use conexiones-trafo.jpg>
+Package pdftex.def Info: conexiones-trafo.jpg  used on input line 244.
+(pdftex.def)             Requested size: 301.1261pt x 139.82832pt.
+<trafo-trifasico.jpeg, id=42, 644.4075pt x 1104.125pt>
+File: trafo-trifasico.jpeg Graphic file (type jpg)
+<use trafo-trifasico.jpeg>
+Package pdftex.def Info: trafo-trifasico.jpeg  used on input line 259.
+(pdftex.def)             Requested size: 301.1261pt x 515.9568pt.
+ [6 <./conexiones-trafo.jpg>] [7 <./trafo-trifasico.jpeg>]
+<trafo-independiente.jpeg, id=50, 2081.7775pt x 1072.005pt>
+File: trafo-independiente.jpeg Graphic file (type jpg)
+<use trafo-independiente.jpeg>
+Package pdftex.def Info: trafo-independiente.jpeg  used on input line 270.
+(pdftex.def)             Requested size: 361.35132pt x 186.06609pt.
+ [8 <./trafo-independiente.jpeg>]
+<trafo-conexion-dd.jpeg, id=54, 1616.0375pt x 1750.54pt>
+File: trafo-conexion-dd.jpeg Graphic file (type jpg)
+<use trafo-conexion-dd.jpeg>
+Package pdftex.def Info: trafo-conexion-dd.jpeg  used on input line 283.
+(pdftex.def)             Requested size: 301.1261pt x 326.16869pt.
+ [9 <./trafo-conexion-dd.jpeg>]
+<trafo-conexion-yy.jpeg, id=59, 1246.6575pt x 1084.05pt>
+File: trafo-conexion-yy.jpeg Graphic file (type jpg)
+<use trafo-conexion-yy.jpeg>
+Package pdftex.def Info: trafo-conexion-yy.jpeg  used on input line 291.
+(pdftex.def)             Requested size: 301.1261pt x 261.84798pt.
+ [10 <./trafo-conexion-yy.jpeg>]
+<trafo-conexion-dy.jpeg, id=63, 1181.41376pt x 1013.7875pt>
+File: trafo-conexion-dy.jpeg Graphic file (type jpg)
+<use trafo-conexion-dy.jpeg>
+Package pdftex.def Info: trafo-conexion-dy.jpeg  used on input line 307.
+(pdftex.def)             Requested size: 301.1261pt x 258.39638pt.
+ [11 <./trafo-conexion-dy.jpeg>]
+<trafo-conexion-yd.jpeg, id=67, 505.89pt x 518.93875pt>
+File: trafo-conexion-yd.jpeg Graphic file (type jpg)
+<use trafo-conexion-yd.jpeg>
+Package pdftex.def Info: trafo-conexion-yd.jpeg  used on input line 318.
+(pdftex.def)             Requested size: 301.1261pt x 308.89513pt.
+ [12 <./trafo-conexion-yd.jpeg>]
+<estrella-triangulo-trafo.png, id=72, 934.24031pt x 345.54094pt>
+File: estrella-triangulo-trafo.png Graphic file (type png)
+<use estrella-triangulo-trafo.png>
+Package pdftex.def Info: estrella-triangulo-trafo.png  used on input line 331.
+(pdftex.def)             Requested size: 401.50146pt x 148.50061pt.
+<estrella-estrella-trafo.png, id=73, 301.125pt x 136.00812pt>
+File: estrella-estrella-trafo.png Graphic file (type png)
+<use estrella-estrella-trafo.png>
+Package pdftex.def Info: estrella-estrella-trafo.png  used on input line 335.
+(pdftex.def)             Requested size: 401.50146pt x 181.3617pt.
+<triangulo-estrella-trafo.png, id=74, 301.125pt x 143.03438pt>
+File: triangulo-estrella-trafo.png Graphic file (type png)
+<use triangulo-estrella-trafo.png>
+Package pdftex.def Info: triangulo-estrella-trafo.png  used on input line 340.
+(pdftex.def)             Requested size: 401.50146pt x 190.73093pt.
+ [13 <./estrella-triangulo-trafo.png> <./estrella-estrella-trafo.png>] [14 <./triangulo-estrella-trafo.png>] [15] (./myce.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 4044 strings out of 478287
- 65560 string characters out of 5849289
- 378435 words of memory out of 5000000
- 22201 multiletter control sequences out of 15000+600000
- 477644 words of font info for 57 fonts, out of 8000000 for 9000
+ 5237 strings out of 478287
+ 82640 string characters out of 5849289
+ 415723 words of memory out of 5000000
+ 23368 multiletter control sequences out of 15000+600000
+ 479017 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,15n,67p,307b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on myce.pdf (6 pages, 201468 bytes).
+ 55i,15n,62p,278b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on myce.pdf (16 pages, 1200889 bytes).
 PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 154 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
